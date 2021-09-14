@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="803.0" prefWidth="1126.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+   <children>
+      <AnchorPane prefHeight="803.0" prefWidth="292.0" style="-fx-background-color: #0C39FF;">
+         <children>
+            <ImageView fitHeight="110.0" fitWidth="66.0" layoutX="225.0" layoutY="660.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/logo.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="217.0" layoutY="751.0" prefHeight="34.0" prefWidth="83.0" text="EMPIRE" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Modern No. 20" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="218.0" layoutY="775.0" text="C I N E M A S" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <StackPane layoutX="113.0" layoutY="43.0" maxHeight="20.0" prefHeight="20.0" prefWidth="50.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#02426c" height="26.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="75.0" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="GUEST" textAlignment="CENTER" wrappingWidth="66.0">
+                     <font>
+                        <Font name="Tw Cen MT" size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <VBox alignment="CENTER" layoutX="57.0" layoutY="261.0" prefHeight="195.0" prefWidth="194.0">
+               <children>
+                  <Button fx:id="movieCatalogBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#displayMovieCatalog" prefHeight="35.0" prefWidth="212.0" text="Movie Catalog" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="Tw Cen MT" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="cartButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#displayCartSummary" prefHeight="35.0" prefWidth="212.0" text="Cart" textAlignment="CENTER">
+                     <font>
+                        <Font name="Tw Cen MT" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logoutBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#logOut" prefHeight="35.0" prefWidth="212.0" text="Logout" textAlignment="CENTER">
+                     <font>
+                        <Font name="Tw Cen MT" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <BorderPane fx:id="mainView" layoutX="308.0" prefHeight="803.0" prefWidth="818.0">
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="232.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" prefHeight="34.0" prefWidth="154.0" text="EMPIRE" textAlignment="CENTER">
+                     <font>
+                        <Font name="Modern No. 20" size="35.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="147.0" text="C I N E M A S">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="697.0" text="THE BEST CINEMA WITH THE BEST GUESTS!">
+                     <font>
+                        <Font name="Tw Cen MT Bold" size="30.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="100.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane fx:id="movieCatalogPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="803.0" prefWidth="818.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CartSummaryController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="275.0" layoutY="65.0" prefHeight="61.0" prefWidth="268.0" text="Cart Summary">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirmButton" layoutX="549.0" layoutY="666.0" mnemonicParsing="false" onAction="#confirmOrder" prefHeight="49.0" prefWidth="173.0" text="Submit Order">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ScrollPane layoutX="98.0" layoutY="143.0" prefHeight="426.0" prefWidth="624.0">
+         <content>
+            <VBox fx:id="sessions" prefHeight="418.0" prefWidth="616.0" spacing="20.0">
+               <padding>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Label layoutX="547.0" layoutY="594.0" prefHeight="49.0" prefWidth="92.0" text="Total:">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="total" alignment="CENTER_RIGHT" layoutX="639.0" layoutY="594.0" prefHeight="49.0" prefWidth="83.0" text="0€">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="discount" alignment="CENTER_RIGHT" layoutX="190.0" layoutY="599.0" prefHeight="39.0" prefWidth="44.0" text="0€">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="599.0" prefHeight="39.0" prefWidth="92.0" text="Discount:">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
